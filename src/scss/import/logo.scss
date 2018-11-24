@@ -1,0 +1,15 @@
+.logo{
+
+  font-family: Roboto Condensed;
+  font-style: italic;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 32px;
+  color:$colorWhite;
+  &.m-red{
+    color:#F4002C;
+  }
+  &.m-grey{
+    color:$colorGray999;
+  }
+}

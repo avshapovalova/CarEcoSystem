@@ -1,0 +1,90 @@
+.footer{
+  background: #505152;
+  padding-top: 30px;
+  padding-bottom:30px;
+  &__block{
+    display: flex;
+    @include media-640 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include media-960 {
+      width: 33%;
+    }
+    @include media-768 {
+      display: block;
+      width: 40%;
+    }
+    @include media-640 {
+      width:auto;
+    }
+  }
+  &__logo{}
+  &__copyright{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+  }
+
+  &__right{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    @include media-960 {
+      width: 67%;
+    }
+    @include media-768 {
+      display: block;
+      width: 60%;
+    }
+    @include media-640 {
+      margin-top:20px;
+      width:auto;
+    }
+  }
+
+  &__ul{
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 10px;
+  }
+
+  &__li{
+    margin-bottom: 7px;
+
+  }
+
+  &__link{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Roboto;
+  }
+
+  &__contacts{
+    color: white;
+    font-size: 14px;
+    @include media-768 {
+      margin-top: 20px;
+    }
+    @include media-640 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top:20px;
+    }
+  }
+
+  &__phone{
+    display:block;
+    text-decoration: none;
+    color:$colorWhite;
+    margin-top:7px;
+  }
+}
