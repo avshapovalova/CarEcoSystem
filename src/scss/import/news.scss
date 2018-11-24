@@ -9,24 +9,25 @@
 
   }
 
-  &__container{
-
-
-  }
-
   &__listing{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
+    position: absolute;
     top:-200px;
     z-index:10;
+
   }
 
   &__item{
     width: 45%;
+    margin-bottom: 50px;
   }
 
   &__image{
+    display: block;
+    text-decoration: none;
+    color:$colorPrimary;
     height: 300px;
     img{
       width: 100%;
@@ -49,12 +50,30 @@
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 15px;
+    text-decoration: none;
+    color:$colorPrimary;
+    display: block;
   }
 
   &__preview{
     line-height: 21px;
     font-size: 14px;
     height: 64px;
+    overflow: hidden;
+    display: -webkit-box;
+    textOverflow: ellipsis;
+    -webkit-line-clamp:3;
+    -webkit-box-orient: vertical;
+  }
 
+  &__link{
+    display: block;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 14px;
+    color: #909399;
+    /*position: relative;
+    top: -200px;*/
+    text-align: center;
   }
 }

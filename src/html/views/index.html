@@ -1,7 +1,7 @@
 <%= _.template(require('./../includes/header.html'))() %>
 <div class="banner">
     <img src="/img/banner-main.png" alt=""/>
-    <div class="logo banner__logo"><span class="logo m-red">Car</span><span class="logo m-grey">Eco</span><span class="logo">System</span></div>
+    <!--<div class="logo banner__logo"><span class="logo m-red">Car</span><span class="logo m-grey">Eco</span><span class="logo">System</span></div>-->
 </div>
 <div class="container">
     <h1>Как работает система</h1>
@@ -139,41 +139,58 @@
         <a class="button">Начать работу</a>
     </div>
 </div>
+
 <div class="news">
     <div class="news__top">
         <h2>Новости</h2>
     </div>
-    <div class="container news__container">
-    <div class="news__listing">
-        <div class="news__item">
-            <div class="news__image">
-                <img src="/src/img/image.png" alt=""/>
-            </div>
-            <div class="news__content">
-                <div class="news__date">21.10.2018</div>
-                <div class="news__title">Renault Trucks готовит к испытаниям экспериментальный экономичный автопоезд</div>
-                <div class="news__preview">Пока некоторые производители переводят свои тягачи на электротягу, в компании Renault продолжают добиваться максимальной экономии от обычных дизельных автопоездов. Так, недавно французы построили экспериментальный автопоезд
-                    Пока некоторые производители переводят свои тягачи на электротягу, в компании Renault продолжают добиваться максимальной экономии от обычных дизельных автопоездов. Так, недавно французы построили экспериментальный автопоезд
+    <div class="container">
+        <div class="news__listing">
+            <div class="news__item">
+                <a href="" class="news__image">
+                    <img src="/src/img/image.png" alt=""/>
+                </a>
+                <div class="news__content">
+                    <div class="news__date">21.10.2018</div>
+                    <a href="" class="news__title">Renault Trucks готовит к испытаниям экспериментальный экономичный автопоезд</a>
+                    <div class="news__preview">Пока некоторые производители переводят свои тягачи на электротягу, в компании Renault продолжают добиваться максимальной экономии от обычных дизельных автопоездов. Так, недавно французы построили экспериментальный автопоезд
+                        Пока некоторые производители переводят свои тягачи на электротягу, в компании Renault продолжают добиваться максимальной экономии от обычных дизельных автопоездов. Так, недавно французы построили экспериментальный автопоезд
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="news__item">
-            <div class="news__image">
-                <img src="/src/img/image1.png" alt=""/>
-            </div>
-            <div class="news__content">
-                <div class="news__date">21.10.2018</div>
-                <div class="news__title">Renault Trucks готовит к испытаниям экспериментальный экономичный автопоезд</div>
-                <div class="news__preview">Пока некоторые производители переводят свои тягачи на электротягу, в компании Renault продолжают добиваться максимальной экономии от обычных дизельных автопоездов. Так, недавно французы построили экспериментальный автопоезд
-                    Пока некоторые производители переводят свои тягачи на электротягу, в компании Renault продолжают добиваться максимальной экономии от обычных дизельных автопоездов. Так, недавно французы построили экспериментальный автопоезд
+            <div class="news__item">
+                <a href="" class="news__image">
+                    <img src="/src/img/image1.png" alt=""/>
+                </a>
+                <div class="news__content">
+                    <div class="news__date">21.10.2018</div>
+                    <a href="" class="news__title">Renault Trucks готовит к испытаниям экспериментальный экономичный автопоезд</a>
+                    <div class="news__preview">Пока некоторые производители переводят свои тягачи на электротягу, в компании Renault продолжают добиваться максимальной экономии от обычных дизельных автопоездов. Так, недавно французы построили экспериментальный автопоезд
+                        Пока некоторые производители переводят свои тягачи на электротягу, в компании Renault продолжают добиваться максимальной экономии от обычных дизельных автопоездов. Так, недавно французы построили экспериментальный автопоезд
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
+        </div>
+        <a href="" class="news__link">Еще новости</a>
     </div>
 </div>
+
+<div class="contacts">
+    <div class="container">
+        <h2>Контакты</h2>
+        <div class="contacts__info">
+            <div class="contacts__address"><span class="contacts__font">Адрес:</span> г. Москва, ул. Ленина, дом. 145, офис 343 </div>
+            <div class="contacts__divider"></div>
+            <div class="contacts__phone"><span class="contacts__font">Телефон / Факс:</span> (495) 340-4555</div>
+            <div class="contacts__divider"></div>
+            <div class="contacts__email"><span class="contacts__font">E-mail:</span> info@carecosystem.ru</div>
+        </div>
+    </div>
+</div>
+<div class="map" id="map"></div>
+
 
 
 
