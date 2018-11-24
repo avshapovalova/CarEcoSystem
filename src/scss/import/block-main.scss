@@ -1,6 +1,7 @@
 .block-main{
   padding-bottom: 50px;
   padding-top: 50px;
+
   &__title{
     font-weight: 900;
     line-height: normal;
@@ -11,31 +12,31 @@
     text-align: center;
     letter-spacing: 0.05em;
     margin-bottom: 60px;
-
   }
+
   &__icons{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom:40px;
-
   }
+
   &__item{
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 220px;
-
   }
+
   &__icon{
     width: 70px;
     height: 70px;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-
   }
+
   &__desc{
     font-family: Roboto;
     font-size: 16px;
