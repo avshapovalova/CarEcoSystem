@@ -1,10 +1,15 @@
 .news{
   padding-bottom: 40px;
+  padding-top: 40px;
 
   &__listing{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 20px;
+    @include media-640 {
+      display: block;
+    }
 
 
   }
@@ -12,6 +17,9 @@
   &__item{
     width: 45%;
     margin-bottom: 50px;
+    @include media-640 {
+      width: 100%;
+    }
   }
 
   &__image{
@@ -63,5 +71,10 @@
     font-size: 14px;
     color: #909399;
     text-align: center;
+  }
+
+  &__divider{
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 }

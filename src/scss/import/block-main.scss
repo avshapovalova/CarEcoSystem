@@ -12,13 +12,25 @@
     text-align: center;
     letter-spacing: 0.05em;
     margin-bottom: 60px;
+    @include media-960 {
+      margin-bottom: 20px;
+    }
+    @include media-640 {
+      font-size: 42px;
+    }
   }
 
   &__icons{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom:40px;
+    @include media-960 {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    @include media-640 {
+      display: block;
+    }
   }
 
   &__item{
@@ -27,6 +39,14 @@
     flex-direction: column;
     align-items: center;
     width: 220px;
+    @include media-960 {
+      width: 30%;
+      margin-top: 40px;
+    }
+    @include media-640 {
+      width: auto;
+      margin: 30px auto 0 auto;
+    }
   }
 
   &__icon{
@@ -35,6 +55,9 @@
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    @include media-640 {
+      margin-bottom: 10px;
+    }
   }
 
   &__desc{

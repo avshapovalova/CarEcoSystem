@@ -2,6 +2,9 @@
   height: 182px;
   background: $colorGray257;
   padding-top:50px;
+  @include media-960 {
+    padding-top:15px;
+  }
 
 
   &__info{
@@ -13,6 +16,14 @@
     text-align: center;
     justify-content: center;
     font-weight: 600;
+    @include media-960 {
+      display:block;
+      line-height: 22px;
+    }
+    @include media-640 {
+      font-size: 12px;
+
+    }
   }
 
   &__font{
@@ -26,5 +37,8 @@
     background: #D80027 ;
     margin-right: 30px;
     margin-left: 30px;
+    @include media-960 {
+      display:none;
+    }
   }
 }
