@@ -1,0 +1,44 @@
+.notfound{
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+
+  &__top {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 550px;
+    margin:0 auto;
+  }
+
+  &__4{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 366px;
+    font-size: 240px;
+    &.m-right{
+      position: absolute;
+      top:0;
+      left:0;
+    }
+    &.m-left{
+      position: absolute;
+      top:0;
+      right:0;
+    }
+  }
+  &__image {
+
+  }
+
+
+  &__text{
+    margin-bottom: 20px;
+  }
+
+  &__link{
+    color: $colorBlue;
+  }
+
+}

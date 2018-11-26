@@ -1,5 +1,4 @@
 .logo{
-
   font-family: Roboto Condensed;
   font-style: italic;
   font-weight: bold;
@@ -12,4 +11,8 @@
   &.m-grey{
     color:$colorGray999;
   }
+  &.m-header{
+    font-size: 40px;
+  }
+
 }
