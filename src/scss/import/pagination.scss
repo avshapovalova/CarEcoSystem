@@ -1,0 +1,50 @@
+.pagination {
+  display:flex;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+
+  &__num{
+    text-align: center;
+    line-height: 21px;
+  }
+
+  &__link{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    font-size: 14px;
+    padding-right: 15px;
+    color: #C4C8CC;
+    &:hover{
+      color: $colorBlue;
+
+    }
+    &.m-active{
+      color: $colorBlue;
+      text-decoration: underline;
+    }
+  }
+
+  &__left,&__right {
+    display: block;
+    width: 37px;
+    height: 37px;
+    text-decoration: none;
+    &:hover{
+      & svg,
+      & svg path {
+        stroke: $colorBlue
+      }
+    }
+  }
+  &__left{
+    margin-right: 40px;
+  }
+  &__right{
+    margin-left: 25px;
+  }
+
+
+}
