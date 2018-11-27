@@ -1,55 +1,58 @@
 <%= _.template(require('./../includes/header.html'))() %>
+
 <div class="registration">
-    <h1>Регистрация</h1>
-    <div class="form-block registration__form-block">
-        <form class="registration__form">
-            <label for="surname">Фамилия</label>
-            <div class="registration__item">
-                <input id="surname"  class="registration__input" type="text">
-            </div>
-            <label for="name">Имя</label>
-            <div class="registration__item">
-                <input id="name"  class="registration__input" type="text">
-            </div>
-            <label for="secondname">Отчество</label>
-            <div class="registration__item">
-                <input id="secondname"  class="registration__input" type="text">
-            </div>
-            <label for="client">Я являюсь</label>
-            <div class="registration__item">
-                <select id="client" class="registration__select">
-                    <option disabled selected>Выберите</option>
-                    <option value="1">Заказчик</option>
-                    <option value="2">Перевозчик</option>
-                </select>
-            </div>
-            <label for="email">E-mail</label>
-            <div class="registration__item">
-                <input id="email" class="registration__input" type="text">
-            </div>
-            <label for="phone">Телефон</label>
-            <div class="registration__item">
-                <input id="phone" class="registration__input" type="text">
-            </div>
-            <label for="organization">Название организации</label>
-            <div class="registration__item">
-                <input id="organization" class="registration__input" type="text">
-            </div>
-            <label for="lawform">Правовая форма</label>
-            <div class="registration__item">
-            <select id="lawform" class="registration__select">
-                <option disabled selected>Выберите</option>
-                <option value="1">ООО</option>
-                <option value="2">ИП</option>
-                <option value="3">ЗАО</option>
-            </select>
-            </div>
-            <div class="registration__checkbox">
-                <input id="checkbox" class="registration__input-checkbox" type="checkbox" checked>
-                <label for="checkbox">Нажимая зарегистрироваться, я даю разрешение на предоставление <a href="" class="registration__link">персональных данных</a></label>
-            </div>
-            <input class="registration__button" type="submit" value="Зарегистрироваться">
-        </form>
+    <div class="container">
+        <h1>Регистрация</h1>
+        <div class="shadow-block registration__shadow-block">
+            <form class="registration__form">
+                <label for="surname">Фамилия</label>
+                <div class="registration__item">
+                    <input id="surname"  class="registration__input" type="text">
+                </div>
+                <label for="name">Имя</label>
+                <div class="registration__item">
+                    <input id="name"  class="registration__input" type="text">
+                </div>
+                <label for="secondname">Отчество</label>
+                <div class="registration__item">
+                    <input id="secondname"  class="registration__input" type="text">
+                </div>
+                <label for="client">Я являюсь</label>
+                <div class="registration__item">
+                    <select id="client" class="registration__select">
+                        <option disabled selected>Выберите</option>
+                        <option value="1">Заказчик</option>
+                        <option value="2">Перевозчик</option>
+                    </select>
+                </div>
+                <label for="email">E-mail</label>
+                <div class="registration__item">
+                    <input id="email" class="registration__input" type="text">
+                </div>
+                <label for="phone">Телефон</label>
+                <div class="registration__item">
+                    <input id="phone" class="registration__input" type="text">
+                </div>
+                <label for="organization">Название организации</label>
+                <div class="registration__item">
+                    <input id="organization" class="registration__input" type="text">
+                </div>
+                <label for="lawform">Правовая форма</label>
+                <div class="registration__item">
+                    <select id="lawform" class="registration__select">
+                        <option disabled selected>Выберите</option>
+                        <option value="1">ООО</option>
+                        <option value="2">ИП</option>
+                        <option value="3">ЗАО</option>
+                    </select>
+                </div>
+                <div class="registration__checkbox">
+                    <input id="checkbox" class="registration__input-checkbox" type="checkbox" checked>
+                    <label for="checkbox">Нажимая зарегистрироваться, я даю разрешение на предоставление <a href="" class="registration__link">персональных данных</a></label>
+                </div>
+                <input class="registration__button" type="submit" value="Зарегистрироваться">
+            </form>
+        </div>
     </div>
 </div>
 
