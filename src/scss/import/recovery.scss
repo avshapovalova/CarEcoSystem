@@ -1,0 +1,45 @@
+.recovery{
+  background: #F2F5F7;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  @include media-640 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  &__shadow-block{
+    max-width: 400px;
+    margin:0 auto;
+  }
+
+  &__title{
+    font-weight: bold;
+    font-size: 24px;
+    color: #303133;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__item{
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    height: 38px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+  &__input{
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 36px;
+  }
+
+  &__button{
+    color: $colorWhite;
+    background: $colorBlue;
+    margin: 0;
+  }
+
+
+}

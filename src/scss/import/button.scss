@@ -11,6 +11,8 @@
   text-decoration: none;
   width: 200px;
   margin: 0 auto;
+  outline: none;
+  cursor: pointer;
   &.m-blue{
     border: 1px solid $colorBlue;
     color: $colorBlue;

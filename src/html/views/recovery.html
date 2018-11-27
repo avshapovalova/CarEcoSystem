@@ -1,0 +1,20 @@
+<%= _.template(require('./../includes/header.html'))() %>
+<div class="recovery">
+    <div class="container">
+
+        <div class="shadow-block recovery__shadow-block">
+            <div class="recovery__title">Забыли пароль?</div>
+            <form class="recovery__form">
+                <label for="id1">Ваш e-mail или телефон</label>
+                <div class="recovery__item">
+                    <input id="id1" class="recovery__input" type="text">
+                </div>
+                <button class="button recovery__button" type="submit">Выслать новый пароль</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<%= _.template(require('./../includes/footer.html'))() %>
