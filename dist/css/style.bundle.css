@@ -681,7 +681,7 @@ img.m-zoom {
 .header {
   padding-top: 25px;
   padding-bottom: 10px;
-  background: url("/src/img/banner-main.png") no-repeat;
+  background: url("/img/banner-main.png") no-repeat;
   background-size: cover;
   background-position: center;
   height: 800px;
