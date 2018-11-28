@@ -10,8 +10,6 @@
 
   &__link{
     text-decoration: none;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     line-height: 36px;
     font-size: 14px;
@@ -25,6 +23,12 @@
       color: $colorBlue;
       text-decoration: underline;
     }
+  }
+
+  &__points{
+    display: inline-block;
+    padding-right: 15px;
+    color: #C4C8CC;
   }
 
   &__left,&__right {

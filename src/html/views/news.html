@@ -1,4 +1,4 @@
-<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/header.html'))({className: 'm-small'}) %>
 <div class="grey">
     <div class="news">
         <h1>Новости</h1>
@@ -94,7 +94,7 @@
                 <a class="pagination__link m-active" href="#">1</a>
                 <a class="pagination__link" href="#">2</a>
                 <a class="pagination__link" href="#">3</a>
-                <a class="pagination__link" href="#">...</a>
+                <div class="pagination__points" >...</div>
                 <a class="pagination__link" href="#">11</a>
             </div>
             <a href="" class="pagination__right">

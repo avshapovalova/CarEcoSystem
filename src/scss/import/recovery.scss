@@ -26,6 +26,14 @@
     height: 38px;
     margin-bottom: 20px;
     margin-top: 5px;
+    &.m-error{
+      border: 1px solid #F4002C;
+      margin-bottom: 25px;
+    }
+    &.m-error .recovery__error{
+      display: block;
+      color: #F4002C;
+    }
   }
 
   &__input{
@@ -35,11 +43,30 @@
     height: 36px;
   }
 
+  &__error{
+    display: none;
+  }
+
+  &__success{
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+  }
+
+  &__icon{
+    width:34px;
+    height: 34px;
+    margin-right: 5px;
+    text-align: center;
+    svg{
+      width:100%;
+      height: 100%;
+    }
+  }
+
   &__button{
     color: $colorWhite;
     background: $colorBlue;
     margin: 0;
   }
-
-
 }

@@ -1,4 +1,4 @@
-<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/header.html'))({className: 'm-small'}) %>
 
 <div class="registration">
     <div class="container">
@@ -8,7 +8,15 @@
                 <label for="surname">Фамилия</label>
                 <div class="registration__item">
                     <input id="surname"  class="registration__input" type="text">
+                    <div class="registration__error">Введите фамилию</div>
                 </div>
+
+                <label for="surname1">Фамилия</label>
+                <div class="registration__item m-error">
+                    <input id="surname1"  class="registration__input" type="text">
+                    <div class="registration__error">Введите фамилию</div>
+                </div>
+
                 <label for="name">Имя</label>
                 <div class="registration__item">
                     <input id="name"  class="registration__input" type="text">
@@ -38,18 +46,34 @@
                     <input id="organization" class="registration__input" type="text">
                 </div>
                 <label for="lawform">Правовая форма</label>
-                <div class="registration__item">
+                <div class="registration__item m-error">
                     <select id="lawform" class="registration__select">
                         <option disabled selected>Выберите</option>
                         <option value="1">ООО</option>
                         <option value="2">ИП</option>
                         <option value="3">ЗАО</option>
                     </select>
+                    <div class="registration__error">Не выбрана правовая форма</div>
+                </div>
+                <label for="lawform1">Правовая форма</label>
+                <div class="registration__item">
+                    <select id="lawform1" class="registration__select">
+                        <option disabled selected>Выберите</option>
+                        <option value="1">ООО</option>
+                        <option value="2">ИП</option>
+                        <option value="3">ЗАО</option>
+                    </select>
+                    <div class="registration__error">Не выбрана правова форма</div>
                 </div>
                 <div class="registration__checkbox">
                     <input id="checkbox" class="registration__input-checkbox" type="checkbox" checked>
                     <label for="checkbox">Нажимая зарегистрироваться, я даю разрешение на предоставление <a href="" class="registration__link">персональных данных</a></label>
                 </div>
+                <div class="registration__checkbox m-error">
+                    <input id="checkbox1" class="registration__input-checkbox" type="checkbox">
+                    <label for="checkbox1">Нажимая зарегистрироваться, я даю разрешение на предоставление <a href="" class="registration__link">персональных данных</a></label>
+                </div>
+
                 <input class="registration__button" type="submit" value="Зарегистрироваться">
             </form>
         </div>

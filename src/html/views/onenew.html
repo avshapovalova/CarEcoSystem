@@ -1,10 +1,18 @@
-<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/header.html'))({className: 'm-small'}) %>
 <div class="new">
     <div class="container">
         <div class="banner new__banner">
             <img src="/src/img/image.png" alt=""/>
         </div>
         <div class="new__content">
+            <div class="new__title">
+                <div class="new__top">
+                    <div class="new__category">Транспорт</div>
+                    <div class="new__divider"></div>
+                    <div class="new__date">21.10.2018</div>
+                </div>
+                <h1 class="new__bottom">Renault Trucks готовит к испытаниям экспериментальный экономичный автопоезд</h1>
+            </div>
         <h2>Коротко о новом тягаче</h2>
         <p>Пока некоторые производители переводят свои тягачи на электротягу, в компании Renault
             продолжают добиваться максимальной экономии от обычных дизельных автопоездов. Так, недавно французы построили экспериментальный автопоезд,
@@ -37,14 +45,7 @@
             <li>13-процентной экономии топлива</li>
         </ol>
     </div>
-    <div class="new__anons">
-        <div class="new__top">
-            <div class="new__category">Транспорт</div>
-            <div class="new__divider"></div>
-            <div class="new__date">21.10.2018</div>
-        </div>
-        <div class="new__title">Renault Trucks готовит к испытаниям экспериментальный экономичный автопоезд</div>
-    </div>
+
 </div>
 </div>
 

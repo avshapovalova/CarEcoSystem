@@ -24,6 +24,19 @@
     height: 38px;
     margin-bottom: 20px;
     margin-top: 5px;
+    &.m-error{
+      border: 1px solid #F4002C;
+      margin-bottom: 25px;
+    }
+    &.m-error .registration__error{
+      display: block;
+      color: #F4002C;
+
+    }
+  }
+
+  &__error{
+    display: none;
   }
 
   &__input{
@@ -45,6 +58,9 @@
     display: flex;
     font-size: 12px;
     line-height: 15px;
+    &.m-error{
+      color: #F4002C;
+    }
   }
 
   &__input-checkbox{

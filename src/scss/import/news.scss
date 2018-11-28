@@ -2,6 +2,11 @@
   padding-bottom: 40px;
   padding-top: 40px;
 
+  &__h2{
+    font-size: 32px;
+    text-align: center;
+  }
+
   &__listing{
     display:flex;
     flex-wrap: wrap;

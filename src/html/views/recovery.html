@@ -1,4 +1,4 @@
-<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/header.html'))({className: 'm-small'}) %>
 <div class="recovery">
     <div class="container">
 
@@ -8,9 +8,27 @@
                 <label for="id1">Ваш e-mail или телефон</label>
                 <div class="recovery__item">
                     <input id="id1" class="recovery__input" type="text">
+                    <div class="recovery__error">Неверно введен e-mail</div>
                 </div>
+
+                <label for="id2">Ваш e-mail или телефон</label>
+                <div class="recovery__item m-error">
+                    <input id="id2" class="recovery__input" type="text">
+                    <div class="recovery__error">Неверно введен e-mail</div>
+                </div>
+
                 <button class="button recovery__button" type="submit">Выслать новый пароль</button>
             </form>
+
+            <div class="recovery__success">
+                <div class="recovery__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="23" stroke="#1989FA" stroke-width="2"/>
+                        <path d="M18 24.4182L22.4521 29L31 20" stroke="#1989FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="recovery__text">Новый пароль отправлен</div>
+            </div>
 
         </div>
     </div>

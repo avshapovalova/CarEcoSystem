@@ -4,31 +4,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="shortcut icon" href="favicon/favicon.ico">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init(){
+        var myMap = new ymaps.Map("map", {
+          center: [55.979208, 37.172987],
+          zoom: [16],
+          controls: []});
+        var placemark = new ymaps.Placemark([55.979208, 37.172987]);
+        myMap.geoObjects.add(placemark);
+        myMap.controls.add('zoomControl', {
+          size: 'small',
+          float: 'none',
+          position: {
+            bottom: '50px',
+            right: '30px'
+          }
+        });
+      }
+    </script>
     <link rel="stylesheet" href="css/style.bundle.css">
     <title>title</title>
 </head>
 <body>
 <header>
-    <div class="container">
-        <div class="header">
+
+    <div class="header <%=className %>">
+        <div class="container">
             <div class="header__top">
                 <div class="header__logo">
                     <span class="logo m-header m-red">Car</span><span class="logo m-header m-grey">EcoSystem</span>
                 </div>
-                    <form class="header__form">
-                        <div class="header__auth">
-                            <input class="header__input" type="text" placeholder="Логин">
-                        </div>
-                        <div class="header__auth">
-                            <input class="header__input" type="text" placeholder="Пароль">
-                        </div>
-                        <button class="button header__button">Вход</button>
-                    </form>
+                <form class="header__form">
+                    <div class="header__auth">
+                        <input class="header__input" type="text" placeholder="Логин">
+                    </div>
+                    <div class="header__auth">
+                        <input class="header__input" type="text" placeholder="Пароль">
+                    </div>
+                    <button class="button header__button">Вход</button>
+                </form>
             </div>
             <div class="header__bottom">
-            <a href="" class="header__link">Забыли пароль?</a>
+                <a href="" class="header__link">Забыли пароль?</a>
             </div>
+            <div class="header__divider"></div>
         </div>
+
     </div>
 
 </header>
