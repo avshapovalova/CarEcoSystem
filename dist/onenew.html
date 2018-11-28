@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+      var myMap = new ymaps.Map("map", {
+        center: [55.979208, 37.172987],
+        zoom: [16],
+        controls: []
+      });
+      var placemark = new ymaps.Placemark([55.979208, 37.172987]);
+      myMap.geoObjects.add(placemark);
+      myMap.controls.add('zoomControl', {
+        size: 'small',
+        float: 'none',
+        position: {
+          bottom: '50px',
+          right: '30px'
+        }
+      });
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.bundle.css">
+  <title>title</title>
+</head>
+
+<body>
+  <header>
+
+    <div class="header m-small">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__logo">
+            <span class="logo m-header m-red">Car</span><span class="logo m-header m-grey">EcoSystem</span>
+          </div>
+          <form class="header__form">
+            <div class="header__auth">
+              <input class="header__input" type="text" placeholder="Логин">
+            </div>
+            <div class="header__auth">
+              <input class="header__input" type="text" placeholder="Пароль">
+            </div>
+            <button class="button header__button">Вход</button>
+          </form>
+        </div>
+        <div class="header__bottom">
+          <a href="" class="header__link">Забыли пароль?</a>
+        </div>
+        <div class="header__divider"></div>
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+
+  <div class="new">
+    <div class="container">
+      <div class="banner new__banner">
+        <img src="/src/img/image.png" alt="" />
+      </div>
+      <div class="new__content">
+        <div class="new__title">
+          <div class="new__top">
+            <div class="new__category">Транспорт</div>
+            <div class="new__divider"></div>
+            <div class="new__date">21.10.2018</div>
+          </div>
+          <h1 class="new__bottom">Renault Trucks готовит к испытаниям экспериментальный экономичный автопоезд</h1>
+        </div>
+        <h2>Коротко о новом тягаче</h2>
+        <p>Пока некоторые производители переводят свои тягачи на электротягу, в компании Renault
+          продолжают добиваться максимальной экономии от обычных дизельных автопоездов. Так, недавно французы построили экспериментальный автопоезд,
+          максимально заточенный на экономию топлива.</p>
+        <p><b>Создан он в рамках французской государственной программы по разработке аэродинамических грузовых
+            автомобилей с низким расходом топлива.</b></p>
+        <p>Более того, в разработке этого автопоезда, получившего название Optifuel Lab 3, принимали участие с десяток р
+          азных местных компаний.</p>
+        <p><a href="">Во главе автопоезда — тягач Renault T.</a></p>
+        <p>Но его внешность доработана с целью улучшения аэродинамических характеристик.
+          Изменена форма переднего бампера, убраны все выступающие элементы на боковинах, включая боковые зеркала. Их, как у нового тягача Mercedes Actros, заменили камеры на тоненьких кронштейнах.</p>
+        <img src="/src/img/image.png" alt="" />
+        <p>Задний обтекатель кабины расположен максимально близко к полуприцепу, дизайн которого также работает на аэродинамику — в буквальном смысле слова. В зависимости от количества груза внутри высота крыши может меняться, уменьшаясь там, где груза нет. На этом фоне закрытые щитками боковины уже не выглядят чем-то фантастическим.</p>
+        <p><i>Заявлено, что тягач и прицеп обуты в специальные шины Michelin со сниженным сопротивлением качению.</i></p>
+        <h2>А вот о технической начинке автопоезда данных пока нет.</h2>
+        <p>Известно лишь, что тягач получит максимально облегченную сдвоенную батарею, а в его двигатель будет залито особое маловязкое масло Total. </p>
+        <p>Разработчики предполагают, что благодаря всем играм с аэродинамикой и техникой экспериментальному автопоезду, по сравнению с обычным, удастся достичь 13-процентной экономии топлива.</p>
+        <p>Испытания экономичного автопоезда начнутся на дорогах Европы в следующем году, а их итоги будут подведены в начале 2020-го.</p>
+        <ul>
+          <li>13-процентной экономии топлива</li>
+          <li>Залито особое маловязкое масло Total</li>
+          <li>13-процентной экономии топлива</li>
+          <li>13-процентной экономии топлива</li>
+        </ul>
+
+        <ol>
+          <li>13-процентной экономии топлива</li>
+          <li>Залито особое маловязкое масло Total</li>
+          <li>13-процентной экономии топлива</li>
+          <li>13-процентной экономии топлива</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__block">
+        <div class="footer__left">
+          <div class="footer__logo"><span class="logo m-red">Car</span><span class="logo m-grey">Eco</span><span class="logo">System</span></div>
+          <div class="footer__copyright">2018 - CarEcoSystem, All rights reserved</div>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__ul">
+            <li class="footer__li"><a href="#" class="footer__link">Инструкция по использованию системы для Заказчика</a></li>
+            <li class="footer__li"><a href="#" class="footer__link">Инструкция по использованию системы для Перевозчика</a></li>
+            <li class="footer__li"><a href="#" class="footer__link">Новости</a></li>
+            <li class="footer__li"><a href="#" class="footer__link">Соглашение о персональных данных</a></li>
+          </ul>
+          <div class="footer__contacts">
+            E-mail: info@carecosystem.ru
+            <a class="footer__phone" href="tel: +74953404555">Телефон: (495) 340-4555</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>

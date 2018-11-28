@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+      var myMap = new ymaps.Map("map", {
+        center: [55.979208, 37.172987],
+        zoom: [16],
+        controls: []
+      });
+      var placemark = new ymaps.Placemark([55.979208, 37.172987]);
+      myMap.geoObjects.add(placemark);
+      myMap.controls.add('zoomControl', {
+        size: 'small',
+        float: 'none',
+        position: {
+          bottom: '50px',
+          right: '30px'
+        }
+      });
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.bundle.css">
+  <title>title</title>
+</head>
+
+<body>
+  <header>
+
+    <div class="header m-small">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__logo">
+            <span class="logo m-header m-red">Car</span><span class="logo m-header m-grey">EcoSystem</span>
+          </div>
+          <form class="header__form">
+            <div class="header__auth">
+              <input class="header__input" type="text" placeholder="Логин">
+            </div>
+            <div class="header__auth">
+              <input class="header__input" type="text" placeholder="Пароль">
+            </div>
+            <button class="button header__button">Вход</button>
+          </form>
+        </div>
+        <div class="header__bottom">
+          <a href="" class="header__link">Забыли пароль?</a>
+        </div>
+        <div class="header__divider"></div>
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+
+  <div class="recovery">
+    <div class="container">
+
+      <div class="shadow-block recovery__shadow-block">
+        <div class="recovery__title">Забыли пароль?</div>
+        <form class="recovery__form">
+          <label for="id1">Ваш e-mail или телефон</label>
+          <div class="recovery__item">
+            <input id="id1" class="recovery__input" type="text">
+            <div class="recovery__error">Неверно введен e-mail</div>
+          </div>
+
+          <label for="id2">Ваш e-mail или телефон</label>
+          <div class="recovery__item m-error">
+            <input id="id2" class="recovery__input" type="text">
+            <div class="recovery__error">Неверно введен e-mail</div>
+          </div>
+
+          <button class="button recovery__button" type="submit">Выслать новый пароль</button>
+        </form>
+
+        <div class="recovery__success">
+          <div class="recovery__icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="23" stroke="#1989FA" stroke-width="2" />
+              <path d="M18 24.4182L22.4521 29L31 20" stroke="#1989FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="recovery__text">Новый пароль отправлен</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__block">
+        <div class="footer__left">
+          <div class="footer__logo"><span class="logo m-red">Car</span><span class="logo m-grey">Eco</span><span class="logo">System</span></div>
+          <div class="footer__copyright">2018 - CarEcoSystem, All rights reserved</div>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__ul">
+            <li class="footer__li"><a href="#" class="footer__link">Инструкция по использованию системы для Заказчика</a></li>
+            <li class="footer__li"><a href="#" class="footer__link">Инструкция по использованию системы для Перевозчика</a></li>
+            <li class="footer__li"><a href="#" class="footer__link">Новости</a></li>
+            <li class="footer__li"><a href="#" class="footer__link">Соглашение о персональных данных</a></li>
+          </ul>
+          <div class="footer__contacts">
+            E-mail: info@carecosystem.ru
+            <a class="footer__phone" href="tel: +74953404555">Телефон: (495) 340-4555</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>

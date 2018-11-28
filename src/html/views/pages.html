@@ -1,0 +1,16 @@
+<%= _.template(require('./../includes/header.html'))({className: 'm-small'}) %>
+
+<div class="container">
+    <p>Список страниц</p>
+    <ul style="padding-bottom:400px">
+        <li><a href="/index.html" target="_blank">Главная</a></li>
+        <li><a href="/onenew.html" target="_blank">Страница новости</a></li>
+        <li><a href="/news.html" target="_blank">Новости</a></li>
+        <li><a href="/registration.html" target="_blank">Регистрация</a></li>
+        <li><a href="/end-registration.html" target="_blank">Конец регистрации</a></li>
+        <li><a href="/recovery.html" target="_blank">Восстановление пароля</a></li>
+        <li><a href="/page-404.html" target="_blank">Страница 404</a></li>
+    </ul>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))() %>
