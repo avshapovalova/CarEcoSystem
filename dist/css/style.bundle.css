@@ -720,7 +720,7 @@ img.m-zoom {
       height: 500px; } }
   @media all and (max-width: 320px) {
     .header {
-      height: 400px; } }
+      height: 450px; } }
   .header.m-small {
     height: auto;
     background: none; }
@@ -731,49 +731,38 @@ img.m-zoom {
     color: #9A9A9A; }
   .header.m-small .header__link:hover {
     color: #505152; }
-  .header__right {
-    width: 40%; }
   .header__top {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    @media all and (max-width: 640px) {
+    @media all and (max-width: 768px) {
       .header__top {
         display: block; } }
   .header__form {
-    width: 37%;
+    width: 510px;
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    @media all and (max-width: 1200px) {
-      .header__form {
-        width: 45%; } }
     @media all and (max-width: 960px) {
       .header__form {
-        width: 50%; } }
-    @media all and (max-width: 640px) {
+        width: 490px; } }
+    @media all and (max-width: 768px) {
       .header__form {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: auto;
         margin-top: 15px; } }
-    @media all and (max-width: 320px) {
-      .header__form {
-        display: block; } }
   .header__auth {
     border: 1px solid #E5E5E5;
     border-radius: 4px;
-    width: 35%;
+    width: 180px;
     height: 38px;
     margin-right: 10px; }
-    @media all and (max-width: 960px) {
+    @media all and (max-width: 768px) {
       .header__auth {
-        width: 30%; } }
-    @media all and (max-width: 640px) {
-      .header__auth {
-        width: 35%; } }
-    @media all and (max-width: 320px) {
-      .header__auth {
-        width: 100%;
-        margin-bottom: 10px; } }
+        margin-bottom: 10px;
+        margin-right: 0; } }
   .header__input {
     outline: none;
     border: none;
@@ -798,22 +787,17 @@ img.m-zoom {
     margin: 0;
     color: #FFFFFF;
     border-color: #FFFFFF; }
-    @media all and (max-width: 960px) {
-      .header__button {
-        width: 25%; } }
-    @media all and (max-width: 320px) {
-      .header__button {
-        width: 40%;
-        margin: 0 auto 10px auto; } }
     .header__button:hover {
       color: #FFFFFF;
       border-color: #FFFFFF; }
   .header__bottom {
     width: 100%;
-    text-align: end; }
-    @media all and (max-width: 320px) {
+    text-align: end;
+    padding-right: 13px; }
+    @media all and (max-width: 768px) {
       .header__bottom {
-        text-align: center; } }
+        text-align: center;
+        padding-right: 0; } }
   .header__link {
     font-size: 12px;
     font-family: Roboto Light, "Open Sans", "Helvetica Neue", sans-serif;
