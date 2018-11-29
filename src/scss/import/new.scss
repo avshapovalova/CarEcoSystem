@@ -48,6 +48,7 @@
 
   &__top{
     display:flex;
+    font-family:$font6 ;
   }
 
   &__divider{
@@ -65,6 +66,7 @@
     color: #1A1A1A;
     margin-top: 15px;
     line-height: 28px;
+    font-family: $font3;
     @include media-640 {
       font-size: 18px;
       line-height: 22px;

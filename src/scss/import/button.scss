@@ -13,6 +13,8 @@
   margin: 0 auto;
   outline: none;
   cursor: pointer;
+  font-family: $font3;
+  font-weight: 500;
   &.m-blue{
     border: 1px solid $colorBlue;
     color: $colorBlue;

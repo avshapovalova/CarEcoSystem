@@ -1,11 +1,12 @@
 h1{
   font-weight: bold;
+  font-family: $font4;
   line-height: normal;
   font-size: 32px;
   text-align: center;
 }
 h2{
-  font-weight: 600;
+  font-weight: bold;
   line-height: 27px;
   font-size: 18px;
   &.m-big{
@@ -25,6 +26,7 @@ li{
 }
 
 i,a {
+  font-family: "Roboto Light";
   color: rgba(51, 51, 51, 0.6);
 }
 p{
@@ -37,4 +39,6 @@ img{
   object-fit: cover;
   border-radius: 5px;
 }
-
+b{
+  font-family: $font4;
+}
