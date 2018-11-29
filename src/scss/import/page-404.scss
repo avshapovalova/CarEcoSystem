@@ -24,6 +24,9 @@
 
   &__link{
     color: $colorBlue;
-    font-family: $font3;
+    font-family: $font5;
+    &:hover{
+      color:#146dc8;
+    }
   }
 }

@@ -13,6 +13,7 @@ $font4: Roboto Bold, 'Open Sans', 'Helvetica Neue', sans-serif;
 $font5: Roboto Medium, 'Open Sans', 'Helvetica Neue', sans-serif;
 $font6: Roboto Light, 'Open Sans', 'Helvetica Neue', sans-serif;
 $font7: Roboto Condensed, 'Open Sans', 'Helvetica Neue', sans-serif;
+$font8: SF Pro, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 
 @mixin dev($name: '', $height: 30, $color: #df1c41) {
@@ -69,6 +70,11 @@ $font7: Roboto Condensed, 'Open Sans', 'Helvetica Neue', sans-serif;
 @font-face {
   font-family: 'Roboto Condensed';
   src: url(../fonts/Roboto/Robotocondensed.ttf);
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url(../fonts/SF-pro.ttf);
 }
 
 @import "~normalize.css/normalize.css";

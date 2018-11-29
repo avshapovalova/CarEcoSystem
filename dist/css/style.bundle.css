@@ -376,6 +376,10 @@ template {
   font-family: 'Roboto Condensed';
   src: url(../fonts/Roboto/Robotocondensed.ttf); }
 
+@font-face {
+  font-family: 'SF Pro';
+  src: url(../fonts/SF-pro.ttf); }
+
 .banner {
   width: 100%;
   height: 800px; }
@@ -415,9 +419,6 @@ template {
       .block-main__icons {
         justify-content: space-around;
         flex-wrap: wrap; } }
-    @media all and (max-width: 640px) {
-      .block-main__icons {
-        display: block; } }
   .block-main__item {
     text-align: center;
     display: flex;
@@ -430,8 +431,7 @@ template {
         margin-top: 40px; } }
     @media all and (max-width: 640px) {
       .block-main__item {
-        width: auto;
-        margin: 30px auto 0 auto; } }
+        width: 47%; } }
   .block-main__icon {
     width: 70px;
     height: 70px;
@@ -440,15 +440,20 @@ template {
     margin-bottom: 30px; }
     @media all and (max-width: 640px) {
       .block-main__icon {
-        margin-bottom: 10px; } }
+        margin-bottom: 10px;
+        width: 40px;
+        height: 40px; } }
   .block-main__desc {
-    font-family: Roboto;
+    font-family: Roboto Regular, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 16px;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #1A1A1A;
     line-height: 24px; }
+    @media all and (max-width: 640px) {
+      .block-main__desc {
+        font-size: 12px; } }
 
 .button {
   padding: 12px 20px 12px 20px;
@@ -470,6 +475,12 @@ template {
   .button.m-blue {
     border: 1px solid #1989FA;
     color: #1989FA; }
+    .button.m-blue:hover {
+      border: 1px solid #146dc8;
+      color: #146dc8; }
+  .button:hover {
+    color: #505152;
+    border: 1px solid #505152; }
 
 * {
   box-sizing: border-box; }
@@ -590,10 +601,12 @@ img.m-zoom {
   .end-registration__link {
     color: #1989FA;
     text-decoration: underline;
-    font-family: Roboto Regular, "Open Sans", "Helvetica Neue", sans-serif; }
+    font-family: Roboto Medium, "Open Sans", "Helvetica Neue", sans-serif; }
     @media all and (max-width: 640px) {
       .end-registration__link {
         font-size: 12px; } }
+    .end-registration__link:hover {
+      color: #146dc8; }
 
 .footer {
   background: #505152;
@@ -716,6 +729,8 @@ img.m-zoom {
     color: #9A9A9A; }
   .header.m-small .header__link {
     color: #9A9A9A; }
+  .header.m-small .header__link:hover {
+    color: #505152; }
   .header__right {
     width: 40%; }
   .header__top {
@@ -744,8 +759,6 @@ img.m-zoom {
       .header__form {
         display: block; } }
   .header__auth {
-    background: #FFFFFF;
-    opacity: 0.8;
     border: 1px solid #E5E5E5;
     border-radius: 4px;
     width: 35%;
@@ -777,6 +790,8 @@ img.m-zoom {
       color: transparent; }
     .header__input:focus:-ms-input-placeholder {
       color: transparent; }
+    .header__input:focus {
+      opacity: 1.0; }
   .header__button {
     width: 120px;
     height: 36px;
@@ -790,6 +805,9 @@ img.m-zoom {
       .header__button {
         width: 40%;
         margin: 0 auto 10px auto; } }
+    .header__button:hover {
+      color: #FFFFFF;
+      border-color: #FFFFFF; }
   .header__bottom {
     width: 100%;
     text-align: end; }
@@ -797,12 +815,13 @@ img.m-zoom {
       .header__bottom {
         text-align: center; } }
   .header__link {
+    font-size: 12px;
     font-family: Roboto Light, "Open Sans", "Helvetica Neue", sans-serif;
     text-align: end;
     color: inherit;
     text-decoration: none; }
     .header__link:hover {
-      text-decoration: underline; }
+      font-weight: bold; }
   .header__divider {
     height: 1px;
     background: rgba(255, 255, 255, 0.3);
@@ -918,7 +937,8 @@ img.m-zoom {
     text-decoration: none;
     color: #1A1A1A;
     height: 300px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    overflow: hidden; }
     .news__image img {
       width: 100%;
       height: 100%;
@@ -955,7 +975,9 @@ img.m-zoom {
     font-size: 14px;
     color: #909399;
     text-align: center;
-    font-family: Roboto Regular, "Open Sans", "Helvetica Neue", sans-serif; }
+    font-family: Roboto Medium, "Open Sans", "Helvetica Neue", sans-serif; }
+    .news__link:hover {
+      color: #505152; }
   .news__divider {
     margin-top: 50px;
     margin-bottom: 30px; }
@@ -981,7 +1003,9 @@ img.m-zoom {
     margin-bottom: 20px; }
   .page-404__link {
     color: #1989FA;
-    font-family: Roboto Regular, "Open Sans", "Helvetica Neue", sans-serif; }
+    font-family: Roboto Medium, "Open Sans", "Helvetica Neue", sans-serif; }
+    .page-404__link:hover {
+      color: #146dc8; }
 
 .pagination {
   display: flex;
@@ -1051,7 +1075,8 @@ img.m-zoom {
       margin-bottom: 25px; }
     .recovery__item.m-error .recovery__error {
       display: block;
-      color: #F4002C; }
+      color: #F4002C;
+      font-size: 13px; }
   .recovery__input {
     outline: none;
     border: none;
@@ -1090,33 +1115,51 @@ img.m-zoom {
   .registration__shadow-block {
     max-width: 400px;
     margin: 30px auto 0 auto;
-    color: #505152;
     text-align: left; }
   .registration__item {
+    font-family: SF Pro, "Open Sans", "Helvetica Neue", sans-serif;
+    position: relative;
     border: 1px solid #E5E5E5;
     border-radius: 4px;
     height: 38px;
     margin-bottom: 20px;
-    margin-top: 5px; }
+    margin-top: 5px;
+    color: #505152; }
     .registration__item.m-error {
       border: 1px solid #F4002C;
       margin-bottom: 25px; }
     .registration__item.m-error .registration__error {
       display: block;
-      color: #F4002C; }
+      color: #F4002C;
+      font-size: 13px; }
   .registration__error {
     display: none; }
   .registration__input {
     width: 100%;
     border: none;
     outline: none;
-    height: 36px; }
+    height: 36px;
+    padding-left: 15px;
+    position: relative;
+    z-index: -1; }
   .registration__select {
     width: 100%;
     border: none;
     outline: none;
     height: 36px;
-    background: #FFFFFF; }
+    background: #FFFFFF;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 15px;
+    color: #303133; }
+  .registration__arrow {
+    pointer-events: none;
+    width: 8px;
+    height: 5px;
+    position: absolute;
+    top: 9px;
+    right: 14px; }
   .registration__checkbox {
     display: flex;
     font-size: 12px;

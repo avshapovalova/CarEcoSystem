@@ -52,9 +52,12 @@
   &__link{
     color: $colorBlue;
     text-decoration: underline;
-    font-family: $font3;
+    font-family: $font5;
     @include media-640 {
       font-size: 12px;
+    }
+    &:hover{
+      color:#146dc8;
     }
   }
 }

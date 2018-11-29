@@ -15,16 +15,18 @@
   &__shadow-block{
     max-width: 400px;
     margin:30px auto 0 auto;
-    color: #505152;
     text-align: left;
   }
 
   &__item{
+    font-family: $font8;
+    position: relative;
     border: 1px solid #E5E5E5;
     border-radius: 4px;
     height: 38px;
     margin-bottom: 20px;
     margin-top: 5px;
+    color: #505152;
     &.m-error{
       border: 1px solid #F4002C;
       margin-bottom: 25px;
@@ -32,6 +34,7 @@
     &.m-error .registration__error{
       display: block;
       color: #F4002C;
+      font-size: 13px;
 
     }
   }
@@ -45,6 +48,9 @@
     border:none;
     outline: none;
     height: 36px;
+    padding-left: 15px;
+    position: relative;
+    z-index: -1;
   }
 
   &__select{
@@ -53,6 +59,21 @@
     outline: none;
     height: 36px;
     background: $colorWhite;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 15px;
+    color: #303133;
+
+  }
+
+  &__arrow{
+    pointer-events: none;
+    width: 8px;
+    height: 5px;
+    position: absolute;
+    top:9px;
+    right: 14px;
   }
 
   &__checkbox{

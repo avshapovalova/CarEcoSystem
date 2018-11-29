@@ -18,6 +18,15 @@
   &.m-blue{
     border: 1px solid $colorBlue;
     color: $colorBlue;
+    &:hover{
+      border: 1px solid #146dc8;
+      color:#146dc8;
+    }
 
+  }
+
+  &:hover{
+    color: #505152;
+    border: 1px solid #505152;
   }
 }
